@@ -286,6 +286,7 @@ export async function generateCompletions({
     };
 
     const generateObjectConfig = {
+      mode: 'json',
       model: model,
       prompt: prompt,
       temperature: options.temperature ?? 0,
