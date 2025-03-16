@@ -10,6 +10,7 @@ import * as Sentry from "@sentry/node";
 import { saveExtract } from "../../lib/extract/extract-redis";
 import { getTeamIdSyncB } from "../../lib/extract/team-id-sync";
 import { performExtraction } from "../../lib/extract/extraction-service";
+import * as crypto from 'crypto';
 
 export async function oldExtract(
   req: RequestWithAuth<{}, ExtractResponse, ExtractRequest>,

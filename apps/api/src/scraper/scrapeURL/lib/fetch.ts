@@ -4,6 +4,7 @@ import * as Sentry from "@sentry/node";
 import { MockState, saveMock } from "./mock";
 import { TimeoutSignal } from "../../../controllers/v1/types";
 import { fireEngineURL } from "../engines/fire-engine/scrape";
+import * as crypto from 'crypto';
 
 export type RobustFetchParams<Schema extends z.Schema<any>> = {
   url: string;

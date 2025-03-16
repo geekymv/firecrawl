@@ -6,6 +6,7 @@ import { waitForJob } from "../../services/queue-jobs";
 import { addScrapeJob } from "../../services/queue-jobs";
 import { getJobPriority } from "../job-priority";
 import type { Logger } from "winston";
+import * as crypto from 'crypto';
 
 interface ScrapeDocumentOptions {
   url: string;

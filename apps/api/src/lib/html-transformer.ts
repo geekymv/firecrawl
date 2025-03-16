@@ -2,6 +2,7 @@ import koffi, { KoffiFunction } from "koffi";
 import { join } from "path";
 import { stat } from "fs/promises";
 import { platform } from "os";
+import * as crypto from 'crypto';
 
 // TODO: add a timeout to the Rust transformer
 const rustExecutablePath = join(
