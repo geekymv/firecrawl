@@ -6,7 +6,7 @@ env:
 on:
   push:
     branches:
-      - main
+      - feat/geekymv
     paths:
       - apps/api/**
   workflow_dispatch:
@@ -30,5 +30,5 @@ jobs:
 
           - name: 'Build Inventory Image'
             run: |
-              docker build . --tag ghcr.io/mendableai/firecrawl:latest
-              docker push ghcr.io/mendableai/firecrawl:latest
+              docker build . --tag ghcr.io/geekymv/firecrawl:latest
+              docker push ghcr.io/geekymv/firecrawl:latest
